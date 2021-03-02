@@ -2,9 +2,8 @@
   "name": "ninja-backend",
   "version": "1.0.0",
   "description": "In this series we'll be creating, from scratch, a full-stack application, including a GraphQL server on Node.js, a React front-end (with Apollo) and MongoDB to store all of our data.",
-  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "Gerardo Tordoya <zherar7ordoya@outlook.com> (zherar7ordoya.github.io)",

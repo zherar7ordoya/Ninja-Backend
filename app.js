@@ -20,8 +20,8 @@ mongoose
     autoIndex: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.info("HUMONGOUS IN DA HOUSE!"))
-  .catch((e) => console.error("*** Error connecting to MongoDB... ***", e));
+  .then(() => console.info("*---=> MongoDB Operativo"))
+  .catch((e) => console.error("*** Error conectando a MongoDB ***", e));
 
 const app = express();
 app.use(cors());
@@ -38,7 +38,7 @@ app.use(
 );
 
 app.listen(4000, () => {
-  console.log("***STATUS PUERTO 4000: OKAY***");
+  console.log("*---=> Servidor escuchando el puerto 4000");
 });
 
 // *----------------------------------------------------------------=> NO TOCAR!
