@@ -4,12 +4,13 @@
   "description": "In this series we'll be creating, from scratch, a full-stack application, including a GraphQL server on Node.js, a React front-end (with Apollo) and MongoDB to store all of our data.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch app.ts --exec ts-node app.ts"
+    "start": "node app.js"
   },
   "keywords": [],
-  "author": "Gerardo Tordoya <zherar7ordoya@pm.me> (zherar7ordoya.github.io)",
+  "author": "Gerardo Tordoya <zherar7ordoya@outlook.com> (zherar7ordoya.github.io)",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.0",

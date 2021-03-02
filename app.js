@@ -2,6 +2,7 @@ const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 const DB_URI =
   "mongodb+srv://cooluser:coolpassword@cluster0.pjcny.gcp.mongodb.net/ninja?retryWrites=true&w=majority";
@@ -23,6 +24,7 @@ mongoose
   .catch((e) => console.error("*** Error connecting to MongoDB... ***", e));
 
 const app = express();
+app.use(cors());
 
 const { printSchema } = require("graphql");
 
